@@ -16,7 +16,6 @@ public class PlayerController : MonoBehaviour
     // private fields
     private Transform thisTR;
 
-
     // Start is called before the first frame update
     void Start()
     {
