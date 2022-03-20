@@ -1,4 +1,4 @@
-repository "Projeto 2022@SMF_Studios@cloud"
+repository "2022 Project@SMF_Studios@cloud"
   path "/"
     br "/main"
     co "/main"
