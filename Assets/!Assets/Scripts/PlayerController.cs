@@ -1,11 +1,11 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float _playerSpeed = 2.5f;
     [Space(5)]
+    [SerializeField] private Transform _thisTR;
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private Animator _animator;
     [Space(5)]
@@ -28,10 +28,17 @@ public class PlayerController : MonoBehaviour
     {
         float mH = Input.GetAxis("Horizontal");
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.A))
         {
+            _thisTR.eulerAngles = new Vector3(0.0f,90.0f,0.0f);
             _animator.SetTrigger("Walking");
-
+            //_rigidbody.AddForce();            
+            _rigidbody.velocity = new Vector3(-(mH * _playerSpeed), 0.0f, 0.0f);
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            _thisTR.eulerAngles = new Vector3(0.0f, -90.0f, 0.0f);
+            _animator.SetTrigger("Walking");
             //_rigidbody.AddForce();            
             _rigidbody.velocity = new Vector3(-(mH * _playerSpeed), 0.0f, 0.0f);
         }
@@ -39,6 +46,8 @@ public class PlayerController : MonoBehaviour
         {
             _animator.SetTrigger("Idle");
         }
+
+
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -67,6 +76,7 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
+        // TODO - do different, this is just testing for mass changed!
         enemyRB.AddForce(transform.forward * 150f);
         enemyRB.mass -= 0.25f;
 
