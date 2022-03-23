@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-            _thisTR.eulerAngles = new Vector3(0.0f,90.0f,0.0f);
+            _thisTR.eulerAngles = new Vector3(0.0f, 90.0f, 0.0f);
             _animator.SetTrigger("Walking");
             //_rigidbody.AddForce();            
             _rigidbody.velocity = new Vector3(-(mH * _playerSpeed), 0.0f, 0.0f);
@@ -48,15 +48,14 @@ public class PlayerController : MonoBehaviour
             _thisTR.eulerAngles = new Vector3(0.0f, -180.0f, 0.0f);
             _animator.SetTrigger("Walking");
             //_rigidbody.AddForce();            
-            _rigidbody.velocity = new Vector3(0.0f, 0.0f, -(mV * _playerSpeed/2));
+            _rigidbody.velocity = new Vector3(0.0f, 0.0f, -(mV * _playerSpeed));
         }
         else if (Input.GetKey(KeyCode.S))
         {
             _thisTR.eulerAngles = new Vector3(0.0f, 0.0f, 0.0f);
             _animator.SetTrigger("Walking");
             //_rigidbody.AddForce();            
-            _rigidbody.velocity = new Vector3(0.0f, 0.0f, -(mV * _playerSpeed / 2));
-            Debug.Log(mV);
+            _rigidbody.velocity = new Vector3(0.0f, 0.0f, -(mV * _playerSpeed));
         }
         else
         {
@@ -71,8 +70,21 @@ public class PlayerController : MonoBehaviour
 
     private void Attack()
     {
-        _animator.SetTrigger("Punch");
+        int random = Random.Range(0, 2);
 
+        switch (random)
+        {
+            case 0:
+                _animator.SetTrigger("Punch");
+                break;
+
+            case 1:
+
+                _animator.SetTrigger("LegKick");
+                break;
+        }
+
+        //#region put it on Animation Event!
         Collider[] colliders = Physics.OverlapSphere(_attackPoint.position, _attackRadius, _layerMask);
 
         foreach (Collider coll in colliders)
@@ -84,6 +96,7 @@ public class PlayerController : MonoBehaviour
                 //coll.GetComponent<Rigidbody>().AddForce(transform.forward * 150f);
             }
         }
+        //#endregion // TODO
     }
 
     private IEnumerator MoveAfterDelay(float delay, Rigidbody enemyRB)

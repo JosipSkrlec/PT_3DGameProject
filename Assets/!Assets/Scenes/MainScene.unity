@@ -8658,12 +8658,12 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 4
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &791602023
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15988,12 +15988,12 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 4
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &1449349807
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -16623,12 +16623,12 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 4
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &1508672279
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -24789,12 +24789,12 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &919132148404859506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24955,7 +24955,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   _attackPoint: {fileID: 1143680036}
-  _attackRadius: 0.3
+  _attackRadius: 0.4
 --- !u!4 &1017971967206406242
 Transform:
   m_ObjectHideFlags: 0
