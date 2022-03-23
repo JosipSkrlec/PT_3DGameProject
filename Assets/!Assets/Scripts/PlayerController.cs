@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform _attackPoint;
     [SerializeField] private float _attackRadius;
 
+
     // private fields
     private Transform thisTR;
 
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         float mH = Input.GetAxis("Horizontal");
+        float mV = Input.GetAxis("Vertical");
 
         if (Input.GetKey(KeyCode.A))
         {
@@ -41,12 +43,25 @@ public class PlayerController : MonoBehaviour
             //_rigidbody.AddForce();            
             _rigidbody.velocity = new Vector3(-(mH * _playerSpeed), 0.0f, 0.0f);
         }
+        else if (Input.GetKey(KeyCode.W))
+        {
+            _thisTR.eulerAngles = new Vector3(0.0f, -180.0f, 0.0f);
+            _animator.SetTrigger("Walking");
+            //_rigidbody.AddForce();            
+            _rigidbody.velocity = new Vector3(0.0f, 0.0f, -(mV * _playerSpeed/2));
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            _thisTR.eulerAngles = new Vector3(0.0f, 0.0f, 0.0f);
+            _animator.SetTrigger("Walking");
+            //_rigidbody.AddForce();            
+            _rigidbody.velocity = new Vector3(0.0f, 0.0f, -(mV * _playerSpeed / 2));
+            Debug.Log(mV);
+        }
         else
         {
             _animator.SetTrigger("Idle");
         }
-
-
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
