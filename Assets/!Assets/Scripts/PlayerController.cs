@@ -43,23 +43,24 @@ public class PlayerController : MonoBehaviour
             //_rigidbody.AddForce();            
             _rigidbody.velocity = new Vector3(-(mH * _playerSpeed), 0.0f, 0.0f);
         }
-        else if (Input.GetKey(KeyCode.W))
+        else
         {
-            _thisTR.eulerAngles = new Vector3(0.0f, -180.0f, 0.0f);
-            _animator.SetTrigger("Walking");
+            _animator.SetTrigger("Idle");
+        }
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            //_thisTR.eulerAngles = new Vector3(0.0f, -180.0f, 0.0f);
+            //_animator.SetTrigger("Walking");
             //_rigidbody.AddForce();            
             _rigidbody.velocity = new Vector3(0.0f, 0.0f, -(mV * _playerSpeed));
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            _thisTR.eulerAngles = new Vector3(0.0f, 0.0f, 0.0f);
-            _animator.SetTrigger("Walking");
+            //_thisTR.eulerAngles = new Vector3(0.0f, 0.0f, 0.0f);
+            //_animator.SetTrigger("Walking");
             //_rigidbody.AddForce();            
             _rigidbody.velocity = new Vector3(0.0f, 0.0f, -(mV * _playerSpeed));
-        }
-        else
-        {
-            _animator.SetTrigger("Idle");
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
