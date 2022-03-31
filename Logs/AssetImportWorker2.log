@@ -15,7 +15,380 @@ C:/Users/JOZA/Desktop/PT_3DGameProject
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-62238
+50118
 Successfully changed project path to: C:/Users/JOZA/Desktop/PT_3DGameProject
 C:/Users/JOZA/Desktop/PT_3DGameProject
 Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 655.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/JOZA/Desktop/PT_3DGameProject/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 920M (ID=0x1299)
+    Vendor:   
+    VRAM:     2009 MB
+    Driver:   25.21.14.2545
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56560
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.317330 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 345.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.226 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5227ms)
+		BeginReloadAssembly (506ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (3677ms)
+			LoadAssemblies (500ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1075ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (231ms)
+			SetupLoadedEditorAssemblies (1824ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (346ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (1167ms)
+				ProcessInitializeOnLoadMethodAttributes (243ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009822 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 452.56 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  8.173 seconds
+Domain Reload Profiling:
+	ReloadAssembly (8174ms)
+		BeginReloadAssembly (976ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (75ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (6838ms)
+			LoadAssemblies (553ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1627ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (209ms)
+			SetupLoadedEditorAssemblies (3564ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (453ms)
+				BeforeProcessingInitializeOnLoad (1387ms)
+				ProcessInitializeOnLoadAttributes (1343ms)
+				ProcessInitializeOnLoadMethodAttributes (297ms)
+				AfterProcessingInitializeOnLoad (67ms)
+				EditorAssembliesLoaded (2ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (34ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.53 seconds
+Refreshing native plugins compatible for Editor in 2.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2839 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.6 MB.
+System memory in use after: 129.8 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3274.
+Total: 8.596500 ms (FindLiveObjects: 0.872100 ms CreateObjectMapping: 0.697500 ms MarkObjects: 6.877300 ms  DeleteObjects: 0.147200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/!Assets/Fonts/Anybody-ExtraExpandedExtraBold.ttf
+  artifactKey: Guid(51b60cd2ce5b668408d4f5a52690e8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-ExtraExpandedExtraBold.ttf using Guid(51b60cd2ce5b668408d4f5a52690e8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c665ddf7ba0032c2ab75446102db24') in 2.774128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/!Assets/Fonts/Anybody-BoldItalic.ttf
+  artifactKey: Guid(c505ce6dcce454944b45f056f8e1c032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-BoldItalic.ttf using Guid(c505ce6dcce454944b45f056f8e1c032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab74befe5f8972ca941a86a735b5f7f1') in 0.306848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000426 seconds.
+  path: Assets/!Assets/Fonts/Anybody-Black.ttf
+  artifactKey: Guid(dfed81603b8af7f4aa367d0e1a1763f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-Black.ttf using Guid(dfed81603b8af7f4aa367d0e1a1763f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '553e8dcb3b7b25893908fcb08594292d') in 0.073984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/!Assets/Fonts/Anybody-ExtraExpandedBlack.ttf
+  artifactKey: Guid(ce4a38559ccb68045b308969b2bbd9c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-ExtraExpandedBlack.ttf using Guid(ce4a38559ccb68045b308969b2bbd9c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5f6aa2736edb2fda86585bfe8539ad7') in 0.091777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/!Assets/Fonts/Anybody-ExtraExpandedBlackItalic.ttf
+  artifactKey: Guid(b48415c569a7c634f82dee806a162aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-ExtraExpandedBlackItalic.ttf using Guid(b48415c569a7c634f82dee806a162aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '185d2352b63426e4ef3485c837b9218b') in 0.189825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/!Assets/Fonts/Anybody-CondensedBold.ttf
+  artifactKey: Guid(2d7d7652f9eddd14aab7d8cb41de5dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-CondensedBold.ttf using Guid(2d7d7652f9eddd14aab7d8cb41de5dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '374b9da31d4c789e9ec1b8b12a40854a') in 0.077881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000462 seconds.
+  path: Assets/!Assets/Fonts/Anybody-CondensedLight.ttf
+  artifactKey: Guid(0ddfa2e38e5273042ae2e5934578058a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-CondensedLight.ttf using Guid(0ddfa2e38e5273042ae2e5934578058a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a8446ac270e11c2285ec3851f79ad9e') in 0.269493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000469 seconds.
+  path: Assets/!Assets/Fonts/Anybody-ExtraBoldItalic.ttf
+  artifactKey: Guid(08de09ba14a46964c998bed819493651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-ExtraBoldItalic.ttf using Guid(08de09ba14a46964c998bed819493651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '330edd1d91cc6e3254c1233acca91364') in 0.062707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/!Assets/Fonts/Anybody-CondensedExtraLightItalic.ttf
+  artifactKey: Guid(655c418de8969af429f6bacae800ffd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-CondensedExtraLightItalic.ttf using Guid(655c418de8969af429f6bacae800ffd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbcab2f37860bebf54d2d6fe244974d7') in 0.220552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005941 seconds.
+  path: Assets/!Assets/Fonts/Anybody-CondensedMedium.ttf
+  artifactKey: Guid(5200f8c942ddec94a8168c073712e222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-CondensedMedium.ttf using Guid(5200f8c942ddec94a8168c073712e222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbdd90069fe9fc2cd50136aa936f5e5a') in 0.734268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003580 seconds.
+  path: Assets/!Assets/Fonts/Anybody-CondensedSemiBoldItalic.ttf
+  artifactKey: Guid(0013ddda62e1c4442a65c09111f51a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-CondensedSemiBoldItalic.ttf using Guid(0013ddda62e1c4442a65c09111f51a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d60212e3153e5c66567ed53ae196a7f') in 0.086620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000375 seconds.
+  path: Assets/!Assets/Fonts/Anybody-CondensedBoldItalic.ttf
+  artifactKey: Guid(9060b1169b7f56d4e9c78de1822068da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-CondensedBoldItalic.ttf using Guid(9060b1169b7f56d4e9c78de1822068da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50a97209a5c4f7f480d5cb8c67f2f260') in 0.253469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/!Assets/Fonts/Anybody-CondensedBlackItalic.ttf
+  artifactKey: Guid(979f1ca0679407d4cac4c3b668a42d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-CondensedBlackItalic.ttf using Guid(979f1ca0679407d4cac4c3b668a42d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9490e4fb87a55d4ffb2c56b882f9e860') in 0.058270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/!Assets/Fonts/Anybody-CondensedThinItalic.ttf
+  artifactKey: Guid(68481841b68f28746991cefc43970b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-CondensedThinItalic.ttf using Guid(68481841b68f28746991cefc43970b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f04ab55b300b9b889c75231c630bf01') in 0.059841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000542 seconds.
+  path: Assets/!Assets/Fonts/Anybody-BlackItalic.ttf
+  artifactKey: Guid(3699e0c1bd1350d48808fdbe343cf700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-BlackItalic.ttf using Guid(3699e0c1bd1350d48808fdbe343cf700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '065f7d326ad514eb260520eea40a449c') in 0.062652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000421 seconds.
+  path: Assets/!Assets/Fonts/Anybody-ExtraExpandedBold.ttf
+  artifactKey: Guid(cb374ec8a018a304ca01bd3b98b89e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-ExtraExpandedBold.ttf using Guid(cb374ec8a018a304ca01bd3b98b89e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fea3c2782af90cb283ece562aff70b6d') in 0.317837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006175 seconds.
+  path: Assets/!Assets/Fonts/Anybody-ExtraExpandedExtraBoldItalic.ttf
+  artifactKey: Guid(3d2c34052a2b13a46888eb43c557510f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-ExtraExpandedExtraBoldItalic.ttf using Guid(3d2c34052a2b13a46888eb43c557510f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36fe4f05e5b3367494b54b3aafa8d484') in 0.865346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000417 seconds.
+  path: Assets/!Assets/Fonts/Anybody-CondensedSemiBold.ttf
+  artifactKey: Guid(eb26f53cd6cdff54eaf99e1c4b906cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-CondensedSemiBold.ttf using Guid(eb26f53cd6cdff54eaf99e1c4b906cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '186105f8da3422ac985d94679580a9c1') in 0.100615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/!Assets/Fonts/Anybody-CondensedExtraLight.ttf
+  artifactKey: Guid(cfc1f979e06d973479f62c3fc0a6c43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-CondensedExtraLight.ttf using Guid(cfc1f979e06d973479f62c3fc0a6c43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2614e544ecf7d4700ebae51b893dc88') in 0.095996 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000520 seconds.
+  path: Assets/!Assets/Fonts/Anybody-CondensedBlack.ttf
+  artifactKey: Guid(f0800d0ee27d3bf4684eb27317aeb7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-CondensedBlack.ttf using Guid(f0800d0ee27d3bf4684eb27317aeb7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb99e50129deef37933ec1f11c14c2c') in 0.052716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/!Assets/Fonts/Anybody-CondensedRegular.ttf
+  artifactKey: Guid(84eba28199006804ebe4b5a2eb843369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-CondensedRegular.ttf using Guid(84eba28199006804ebe4b5a2eb843369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf2b854d16e0c6d5a3889c2ba3b69a7b') in 0.057184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000370 seconds.
+  path: Assets/!Assets/Fonts/Anybody-CondensedExtraBoldItalic.ttf
+  artifactKey: Guid(560fbeba3994bd94cb284d6e5760e6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-CondensedExtraBoldItalic.ttf using Guid(560fbeba3994bd94cb284d6e5760e6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9e30a603fb2c470a293559791aad1f8') in 0.067429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000643 seconds.
+  path: Assets/!Assets/Fonts/Anybody-CondensedExtraBold.ttf
+  artifactKey: Guid(e6a7f626348e00c4da5a0206c296cf72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-CondensedExtraBold.ttf using Guid(e6a7f626348e00c4da5a0206c296cf72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e1fc23a62dcc7ee26e1411da3c85d9a') in 0.041966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/!Assets/Fonts/Anybody-ExtraExpandedExtraLight.ttf
+  artifactKey: Guid(2ee1ce6cb07f0734189acdf756855412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-ExtraExpandedExtraLight.ttf using Guid(2ee1ce6cb07f0734189acdf756855412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f66dc6aae221d332749965c8af71faaa') in 0.047601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000375 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1086c45db6b08dcccce6d79d94e9dad1') in 0.485257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99bc742907ac7fb12ea8add2d3c32955') in 0.148818 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000438 seconds.
+  path: Assets/!Assets/Fonts/Anybody-Bold.ttf
+  artifactKey: Guid(6597c5303b48e144a9578086a6619839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-Bold.ttf using Guid(6597c5303b48e144a9578086a6619839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afd781e1546e66d97e9b5ec0a3ba9ad8') in 0.082601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000486 seconds.
+  path: Assets/!Assets/Fonts/Anybody-ExtraBold.ttf
+  artifactKey: Guid(ee263ce7d53d5d345a6b2d8e89d580f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-ExtraBold.ttf using Guid(ee263ce7d53d5d345a6b2d8e89d580f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e3f2c1300a94a51dc5ffd19a221bfe8') in 0.970559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000474 seconds.
+  path: Assets/!Assets/Fonts/Anybody-CondensedLightItalic.ttf
+  artifactKey: Guid(fcd948f0c68932440b31cecc387ea815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-CondensedLightItalic.ttf using Guid(fcd948f0c68932440b31cecc387ea815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d5205470a180a96924633853d5c0f7c') in 0.127007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000989 seconds.
+  path: Assets/!Assets/Fonts/Anybody-CondensedThin.ttf
+  artifactKey: Guid(c1c78e3779403b746ab84e906b2c93e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-CondensedThin.ttf using Guid(c1c78e3779403b746ab84e906b2c93e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a7d7afa613a44e32a6bccd525456142') in 0.393446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.008289 seconds.
+  path: Assets/!Assets/Fonts/Anybody-ExtraExpandedItalic.ttf
+  artifactKey: Guid(648bd24b00590a740ad32d243ac06cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-ExtraExpandedItalic.ttf using Guid(648bd24b00590a740ad32d243ac06cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '234be07af00834747824b06dab12e020') in 0.430708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000772 seconds.
+  path: Assets/!Assets/Fonts/Anybody-ExtraExpandedSemiBoldItalic.ttf
+  artifactKey: Guid(3c9bd81988caa8a4491f2a38d43e5a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-ExtraExpandedSemiBoldItalic.ttf using Guid(3c9bd81988caa8a4491f2a38d43e5a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65bafda3b5bb2265412d32a01a2e5864') in 0.459814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004210 seconds.
+  path: Assets/!Assets/Fonts/Anybody-ExtraExpandedRegular.ttf
+  artifactKey: Guid(f411e5d4507a28f4aafb2b94a1766cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-ExtraExpandedRegular.ttf using Guid(f411e5d4507a28f4aafb2b94a1766cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bc1fbbdfeecc3bad10ada43b18c96a5') in 0.164804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.152831 seconds.
+  path: Assets/!Assets/Fonts/Anybody-ExtraExpandedSemiBold.ttf
+  artifactKey: Guid(379d6988fd7428b4a888961299d76e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-ExtraExpandedSemiBold.ttf using Guid(379d6988fd7428b4a888961299d76e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc4c6c7de215be9a6fb891943ab3bb79') in 0.254674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000585 seconds.
+  path: Assets/!Assets/Fonts/Anybody-ExtraExpandedExtraLightItalic.ttf
+  artifactKey: Guid(38e1fc700a651994f9ad7b76ff748088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-ExtraExpandedExtraLightItalic.ttf using Guid(38e1fc700a651994f9ad7b76ff748088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf316b874ef14e269a66352a67b7e498') in 0.713515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/!Assets/Fonts/Anybody-ExtraExpandedMedium.ttf
+  artifactKey: Guid(276976e36e542a547aed3ae4c8a87fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-ExtraExpandedMedium.ttf using Guid(276976e36e542a547aed3ae4c8a87fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd202c2fa07e1998e81bd338ad589a119') in 0.094570 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000710 seconds.
+  path: Assets/!Assets/Fonts/Anybody-ExtraExpandedLight.ttf
+  artifactKey: Guid(b312220a60d3db34e848865b929d21e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-ExtraExpandedLight.ttf using Guid(b312220a60d3db34e848865b929d21e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8982751f3983d06d6a802750e8d247a8') in 2.361104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001000 seconds.
+  path: Assets/!Assets/Fonts/Anybody-MediumItalic.ttf
+  artifactKey: Guid(60ac9d96e5a25a94d8d1e17512203856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-MediumItalic.ttf using Guid(60ac9d96e5a25a94d8d1e17512203856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bdb37a124d0705e966bc1225e567d84') in 0.265484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000438 seconds.
+  path: Assets/!Assets/Fonts/Anybody-ExtraLight.ttf
+  artifactKey: Guid(9acf9cdec8c267548801fa6a559bf8dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-ExtraLight.ttf using Guid(9acf9cdec8c267548801fa6a559bf8dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1162921e0b8cf0875cda8362da70eb61') in 1.204795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.854722 seconds.
+  path: Assets/!Assets/Fonts/Anybody-CondensedItalic.ttf
+  artifactKey: Guid(cc13956901804a946ac2fee57bbf3944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-CondensedItalic.ttf using Guid(cc13956901804a946ac2fee57bbf3944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '307fc8c9391f573eb480b4509315fe2d') in 0.490690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.032060 seconds.
+  path: Assets/!Assets/Fonts/Anybody-CondensedMediumItalic.ttf
+  artifactKey: Guid(09f2d95b43d20054b80ac3e98f1d26c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-CondensedMediumItalic.ttf using Guid(09f2d95b43d20054b80ac3e98f1d26c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6498b198523fc12fa32734eab72ad492') in 0.160371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.253257 seconds.
+  path: Assets/!Assets/Fonts/Anybody-ExtraExpandedBoldItalic.ttf
+  artifactKey: Guid(db5d61f422a7a994d8da1d3ebc43d387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-ExtraExpandedBoldItalic.ttf using Guid(db5d61f422a7a994d8da1d3ebc43d387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '874d94cab4b162ebfb24d4c954540355') in 1.197730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.896962 seconds.
+  path: Assets/!Assets/Fonts/Anybody-Black SDF.asset
+  artifactKey: Guid(f5babfde5adcb2c4387c5543b4ef07cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-Black SDF.asset using Guid(f5babfde5adcb2c4387c5543b4ef07cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69483a9406651b2bdb1a4c5429d44a76') in 0.367433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 61.883097 seconds.
+  path: Assets/!Assets/Fonts/Anybody-Black SDF.asset
+  artifactKey: Guid(f5babfde5adcb2c4387c5543b4ef07cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/!Assets/Fonts/Anybody-Black SDF.asset using Guid(f5babfde5adcb2c4387c5543b4ef07cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ea4f436e543bbb541f85cbf88c3610') in 0.231320 seconds 

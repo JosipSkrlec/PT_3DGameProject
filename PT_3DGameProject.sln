@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31025.194
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponents", "NavMeshComponents.csproj", "{CF810441-29AE-FC09-2EFC-F490814A7BC2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{71BD983D-F656-C143-EA18-1A8B017DAB8B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponentsEditor", "NavMeshComponentsEditor.csproj", "{B9131E22-CDF1-AC6B-A518-1EBCC353E17D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{A80EE818-5C93-597C-7758-B73827AF8A8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{C218BBEB-CEC3-FC85-1639-0208D9FB02F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,15 +27,12 @@ Global
 		{B9131E22-CDF1-AC6B-A518-1EBCC353E17D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9131E22-CDF1-AC6B-A518-1EBCC353E17D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9131E22-CDF1-AC6B-A518-1EBCC353E17D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A80EE818-5C93-597C-7758-B73827AF8A8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A80EE818-5C93-597C-7758-B73827AF8A8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A80EE818-5C93-597C-7758-B73827AF8A8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A80EE818-5C93-597C-7758-B73827AF8A8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C218BBEB-CEC3-FC85-1639-0208D9FB02F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C218BBEB-CEC3-FC85-1639-0208D9FB02F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C218BBEB-CEC3-FC85-1639-0208D9FB02F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C218BBEB-CEC3-FC85-1639-0208D9FB02F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8164A9E9-3938-4A1D-8D65-319505B29DE6}
 	EndGlobalSection
 EndGlobal
