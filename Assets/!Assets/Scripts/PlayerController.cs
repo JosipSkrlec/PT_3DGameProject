@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float _playerSpeed = 2.5f;
+    [SerializeField] private float _playerDamage = 25.0f;
     [Space(5)]
     [SerializeField] private Transform _thisTR;
     [SerializeField] private Rigidbody _rigidbody;
@@ -104,15 +105,22 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
-        // TODO - do different, this is just testing for mass changed!
-        enemyRB.AddForce(transform.forward * 150f);
-        enemyRB.mass -= 0.25f;
+        Enemy enemy = enemyRB.GetComponent<Enemy>();
 
-        if (enemyRB.mass <= 0.1)
-        {
-            Debug.Log("Destroying " + enemyRB.gameObject.name);
-            Destroy(enemyRB.gameObject);
-        }
+        enemy.TakeDamage(_playerDamage);
+
+        // TODO - show on UI!
+
+
+        // TODO - do different, this is just testing for mass changed!
+        //enemyRB.AddForce(transform.forward * 150f);
+        //enemyRB.mass -= 0.25f;
+
+        //if (enemyRB.mass <= 0.1)
+        //{
+        //    Debug.Log("Destroying " + enemyRB.gameObject.name);
+        //    Destroy(enemyRB.gameObject);
+        //}
     }
 
     private void OnDrawGizmosSelected()

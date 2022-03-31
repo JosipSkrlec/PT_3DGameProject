@@ -27,10 +27,13 @@ public class Enemy : MonoBehaviour
     [SerializeField] private bool _playerInSightRange, _playerInAttackRange;
     #endregion
 
+    private float _enemyMaxHealth;
+
     private void Awake()
     {
         _player = GameObject.Find("Player").transform; // TODO - do reference on a player!
         _agent = GetComponent<NavMeshAgent>();
+        _enemyMaxHealth = _health;
     }
 
     private void Update()
@@ -100,9 +103,13 @@ public class Enemy : MonoBehaviour
         alreadyAttacked = false;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
+        Debug.Log("Take damage " + damage + " to enemy!");
         _health -= damage;
+
+        EnemyBarController.Instance.SetupUIEnemy(this.transform.name, _enemyMaxHealth,_health);
+
 
         if (_health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
     }
