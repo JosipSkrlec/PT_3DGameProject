@@ -28,12 +28,15 @@ public class Enemy : MonoBehaviour
     #endregion
 
     private float _enemyMaxHealth;
+    private float _timeToEqualPosition = 3.0f;
+    private bool _equalThePosition;
 
     private void Awake()
     {
         _player = GameObject.Find("Player").transform; // TODO - do reference on a player!
         _agent = GetComponent<NavMeshAgent>();
         _enemyMaxHealth = _health;
+        _equalThePosition = false;
     }
 
     private void Update()
@@ -42,9 +45,32 @@ public class Enemy : MonoBehaviour
         _playerInSightRange = Physics.CheckSphere(transform.position, _sightRange, _playerLayer);
         _playerInAttackRange = Physics.CheckSphere(transform.position, _attackRange, _playerLayer);
 
-        if (!_playerInSightRange && !_playerInAttackRange) Patroling();
-        if (_playerInSightRange && !_playerInAttackRange) ChasePlayer();
-        if (_playerInAttackRange && _playerInSightRange) AttackPlayer();
+        if (!_playerInSightRange && !_playerInAttackRange)
+        {
+            _equalThePosition = false;
+            Patroling();
+
+        }
+        if (_playerInSightRange && !_playerInAttackRange)
+        {
+            _equalThePosition = true;
+            ChasePlayer();
+        }
+        if (_playerInAttackRange && _playerInSightRange)
+        {
+            AttackPlayer();
+
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (_equalThePosition)
+        {
+            //Vector3.Lerp(transform.position, _player.position,_timeToEqualPosition);
+            //transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Lerp(transform.position.z, _player.transform.position.z, 5.0f));
+            transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Lerp(transform.position.z, _player.position.z, 5.0f));
+        }
     }
 
     private void Patroling()
@@ -108,7 +134,7 @@ public class Enemy : MonoBehaviour
         Debug.Log("Take damage " + damage + " to enemy!");
         _health -= damage;
 
-        EnemyBarController.Instance.SetupUIEnemy(this.transform.name, _enemyMaxHealth,_health);
+        EnemyBarController.Instance.SetupUIEnemy(this.transform.name, _enemyMaxHealth, _health);
 
 
         if (_health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
