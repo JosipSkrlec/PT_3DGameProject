@@ -17,10 +17,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask _layerMask;
     [SerializeField] private Transform _attackPoint;
 
+    private float _playerMaxHealth;
+
     // Start is called before the first frame update
     void Start()
     {
-        _volumeController.AnimateLowHealthIndicator();
+        _playerMaxHealth = _playerHealth;
     }
 
     // Update is called once per frame
@@ -97,20 +99,20 @@ public class PlayerController : MonoBehaviour
             if (coll != null)
             {
                 Debug.Log(coll.gameObject.name);
-                StartCoroutine(MoveAfterDelay(0.5f, coll.GetComponent<Rigidbody>()));
+                StartCoroutine(TakeDamageAfterDelay(0.5f, coll.GetComponent<Rigidbody>()));
                 //coll.GetComponent<Rigidbody>().AddForce(transform.forward * 150f);
             }
         }
         //#endregion // TODO
     }
 
-    private IEnumerator MoveAfterDelay(float delay, Rigidbody enemyRB)
+    private IEnumerator TakeDamageAfterDelay(float delay, Rigidbody enemyRB)
     {
         yield return new WaitForSeconds(delay);
 
         Enemy enemy = enemyRB.GetComponent<Enemy>();
 
-        enemy.TakeDamage(_playerDamage);
+        enemy.TakeDamageToEnemy(_playerDamage);
 
         // TODO - show on UI!
 
@@ -126,9 +128,12 @@ public class PlayerController : MonoBehaviour
         //}
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamageToPlayer(float damage)
     {
         _playerHealth -= damage;
+
+        PlayerBarController.Instance.SetupUIEnemy(_playerMaxHealth, _playerHealth);
+
 
         if (_playerHealth <= 0.0f)
         {
@@ -136,7 +141,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (_playerHealth <= 50.0f)
         {
-
+            _volumeController.AnimateLowHealthIndicator();
         }
     }
 

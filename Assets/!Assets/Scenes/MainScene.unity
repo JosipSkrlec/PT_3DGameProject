@@ -398,6 +398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 745fb43402e6cb4429a8e4a8b0feb5e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerBarIndicator: {fileID: 1303601298}
 --- !u!1 &26386266
 GameObject:
   m_ObjectHideFlags: 0
@@ -3846,6 +3847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 100
+  _enemyDamage: 0
   _animator: {fileID: 159134016}
   _agent: {fileID: 159134015}
   _player: {fileID: 543450652336268399}
@@ -3855,6 +3857,11 @@ MonoBehaviour:
   _playerLayer:
     serializedVersion: 2
     m_Bits: 64
+  _attackRadius: 0
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  _attackPoint: {fileID: 0}
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -7405,6 +7412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 100
+  _enemyDamage: 0
   _animator: {fileID: 305718385}
   _agent: {fileID: 305718384}
   _player: {fileID: 543450652336268399}
@@ -7414,6 +7422,11 @@ MonoBehaviour:
   _playerLayer:
     serializedVersion: 2
     m_Bits: 64
+  _attackRadius: 0
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  _attackPoint: {fileID: 0}
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -32516,6 +32529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 100
+  _enemyDamage: 0
   _animator: {fileID: 1395720391}
   _agent: {fileID: 1395720390}
   _player: {fileID: 543450652336268399}
@@ -32525,6 +32539,11 @@ MonoBehaviour:
   _playerLayer:
     serializedVersion: 2
     m_Bits: 64
+  _attackRadius: 0
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  _attackPoint: {fileID: 0}
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -34998,6 +35017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 100
+  _enemyDamage: 0
   _animator: {fileID: 1503962597}
   _agent: {fileID: 1503962596}
   _player: {fileID: 543450652336268399}
@@ -35007,6 +35027,11 @@ MonoBehaviour:
   _playerLayer:
     serializedVersion: 2
     m_Bits: 64
+  _attackRadius: 0
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  _attackPoint: {fileID: 0}
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -36158,6 +36183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 745fb43402e6cb4429a8e4a8b0feb5e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerBarIndicator: {fileID: 0}
 --- !u!1 &1547763520
 GameObject:
   m_ObjectHideFlags: 0
@@ -39693,7 +39719,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687258581}
   m_LocalRotation: {x: 0, y: 0.98395354, z: -0.17842482, w: 0}
-  m_LocalPosition: {x: 22, y: 3.27, z: 8.28}
+  m_LocalPosition: {x: 22, y: 3, z: 10.820001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -44391,6 +44417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 100
+  _enemyDamage: 0
   _animator: {fileID: 1894150798}
   _agent: {fileID: 1894150797}
   _player: {fileID: 543450652336268399}
@@ -44400,6 +44427,11 @@ MonoBehaviour:
   _playerLayer:
     serializedVersion: 2
     m_Bits: 64
+  _attackRadius: 0
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  _attackPoint: {fileID: 0}
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -46415,6 +46447,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2056705259}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1971060589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1971060590}
+  m_Layer: 6
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1971060590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971060589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 1.236, z: 0.658}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 543450652343298261}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1977834968
 GameObject:
@@ -51167,6 +51229,7 @@ Transform:
   m_Children:
   - {fileID: 8155812263108937970}
   - {fileID: 5472622939593676107}
+  - {fileID: 1971060590}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -51293,6 +51356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 100
+  _enemyDamage: 25
   _animator: {fileID: 919132148404859507}
   _agent: {fileID: 919132148404859508}
   _player: {fileID: 543450652336268399}
@@ -51302,6 +51366,11 @@ MonoBehaviour:
   _playerLayer:
     serializedVersion: 2
     m_Bits: 64
+  _attackRadius: 0.4
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  _attackPoint: {fileID: 1971060590}
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2

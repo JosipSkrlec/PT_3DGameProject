@@ -1,18 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerBarController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static PlayerBarController Instance;
+
+
+    [SerializeField] private Image _playerBarIndicator;
+
+    private void Awake()
     {
-        
+        if (Instance == null)
+        {
+            Instance = this;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetupUIEnemy(float enemyMaxHealth, float enemyCurrentHealth)
     {
-        
+        _playerBarIndicator.fillAmount = enemyCurrentHealth / enemyMaxHealth;
+
+
     }
 }

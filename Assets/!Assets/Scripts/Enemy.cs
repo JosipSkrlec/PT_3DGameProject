@@ -1,15 +1,21 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private float _health;
+    [SerializeField] private float _enemyDamage;
     [Space(5)]
     [SerializeField] private Animator _animator;
     [SerializeField] private NavMeshAgent _agent;
     [SerializeField] private Transform _player;
     [SerializeField] private LayerMask _groundLayer;
     [SerializeField] private LayerMask _playerLayer;
+    [Space(5)]
+    [SerializeField] private float _attackRadius;
+    [SerializeField] private LayerMask _layerMask;
+    [SerializeField] private Transform _attackPoint;
 
     #region Patrolling fields
     [SerializeField] private Vector3 _walkPoint;
@@ -126,7 +132,6 @@ public class Enemy : MonoBehaviour
     {
         //Make sure enemy doesn't move
         _agent.SetDestination(transform.position);
-
         transform.LookAt(_player);
 
         if (!alreadyAttacked)
@@ -136,29 +141,65 @@ public class Enemy : MonoBehaviour
             //rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
             //rb.AddForce(transform.up * 8f, ForceMode.Impulse);
             ///End of attack code
+            ///
             _animator.SetTrigger("Attack");
+
+            Collider[] colliders = Physics.OverlapSphere(_attackPoint.position, _attackRadius, _layerMask);
+            foreach (Collider coll in colliders)
+            {
+                if (coll != null)
+                {
+                    Debug.Log(coll.gameObject.name);
+                    StartCoroutine(TakeDamageAfterDelay(0.5f, coll.GetComponent<Rigidbody>()));
+                    //coll.GetComponent<Rigidbody>().AddForce(transform.forward * 150f);
+                }
+            }
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), _timeBetweenAttacks);
         }
     }
+
+    private IEnumerator TakeDamageAfterDelay(float delay, Rigidbody playerRB)
+    {
+        yield return new WaitForSeconds(delay);
+
+        PlayerController player = playerRB.GetComponent<PlayerController>();
+
+        player.TakeDamageToPlayer(_enemyDamage);
+
+        // TODO - show on UI!
+
+
+        // TODO - do different, this is just testing for mass changed!
+        //enemyRB.AddForce(transform.forward * 150f);
+        //enemyRB.mass -= 0.25f;
+
+        //if (enemyRB.mass <= 0.1)
+        //{
+        //    Debug.Log("Destroying " + enemyRB.gameObject.name);
+        //    Destroy(enemyRB.gameObject);
+        //}
+    }
+
     private void ResetAttack()
     {
         alreadyAttacked = false;
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamageToEnemy(float damage)
     {
         Debug.Log("Take damage " + damage + " to enemy!");
         _health -= damage;
 
         EnemyBarController.Instance.SetupUIEnemy(this.transform.name, _enemyMaxHealth, _health);
 
-
-        if (_health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
+        if (_health <= 0) Invoke(nameof(Die), 0.5f);
     }
-    private void DestroyEnemy()
+
+    private void Die()
     {
+        // TODO - do enemy die not destroy!
         Destroy(gameObject);
     }
 
@@ -166,7 +207,9 @@ public class Enemy : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, _attackRange);
+        Gizmos.DrawSphere(_attackPoint.position, _attackRadius);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, _sightRange);
+
     }
 }
