@@ -5,19 +5,22 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float _playerSpeed = 2.5f;
     [SerializeField] private float _playerDamage = 25.0f;
+    [SerializeField] private float _playerHealth = 200;
     [Space(5)]
+    [Header("References")]
     [SerializeField] private Transform _thisTR;
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private Animator _animator;
+    [SerializeField] private VolumeController _volumeController;
     [Space(5)]
+    [SerializeField] private float _attackRadius;
     [SerializeField] private LayerMask _layerMask;
     [SerializeField] private Transform _attackPoint;
-    [SerializeField] private float _attackRadius;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        _volumeController.AnimateLowHealthIndicator();
     }
 
     // Update is called once per frame
@@ -64,6 +67,7 @@ public class PlayerController : MonoBehaviour
 
         }
 
+        // TODO - disable multi attack in the same time !.. do cooldown!
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Attack();
@@ -121,6 +125,21 @@ public class PlayerController : MonoBehaviour
         //    Destroy(enemyRB.gameObject);
         //}
     }
+
+    public void TakeDamage(float damage)
+    {
+        _playerHealth -= damage;
+
+        if (_playerHealth <= 0.0f)
+        {
+            Debug.Log("Player is death!");
+        }
+        else if (_playerHealth <= 50.0f)
+        {
+
+        }
+    }
+
 
     private void OnDrawGizmosSelected()
     {
