@@ -14,14 +14,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform _attackPoint;
     [SerializeField] private float _attackRadius;
 
-
-    // private fields
-    private Transform thisTR;
-
     // Start is called before the first frame update
     void Start()
     {
-        thisTR = gameObject.GetComponent<Transform>();
+
     }
 
     // Update is called once per frame
@@ -54,14 +50,18 @@ public class PlayerController : MonoBehaviour
             //_thisTR.eulerAngles = new Vector3(0.0f, -180.0f, 0.0f);
             //_animator.SetTrigger("Walking");
             //_rigidbody.AddForce();            
-            _rigidbody.velocity = new Vector3(0.0f, 0.0f, -(mV * _playerSpeed));
+            //_rigidbody.velocity = new Vector3(0.0f, 0.0f, -(mV * _playerSpeed));
+           // transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + _playerSpeed * Time.deltaTime);
+            transform.position += new Vector3(0.0f, 0.0f, -(_playerSpeed / 2 * Time.deltaTime));
         }
         else if (Input.GetKey(KeyCode.S))
         {
             //_thisTR.eulerAngles = new Vector3(0.0f, 0.0f, 0.0f);
             //_animator.SetTrigger("Walking");
             //_rigidbody.AddForce();            
-            _rigidbody.velocity = new Vector3(0.0f, 0.0f, -(mV * _playerSpeed));
+            //_rigidbody.velocity = new Vector3(0.0f, 0.0f, -(mV * _playerSpeed));
+            transform.position += new Vector3(0.0f, 0.0f, _playerSpeed/2 * Time.deltaTime);
+
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -73,7 +73,6 @@ public class PlayerController : MonoBehaviour
     private void Attack()
     {
         int random = Random.Range(0, 2);
-
         switch (random)
         {
             case 0:

@@ -8,7 +8,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private NavMeshAgent _agent;
     [SerializeField] private Transform _player;
-    [SerializeField] private LayerMask _groundLayer, _playerLayer;
+    [SerializeField] private LayerMask _groundLayer;
+    [SerializeField] private LayerMask _playerLayer;
 
     #region Patrolling fields
     [SerializeField] private Vector3 _walkPoint;
@@ -23,13 +24,19 @@ public class Enemy : MonoBehaviour
     #endregion
 
     #region Enemy States
-    [SerializeField] private float _sightRange, _attackRange;
-    [SerializeField] private bool _playerInSightRange, _playerInAttackRange;
+    [SerializeField] private float _sightRange;
+    [SerializeField] private float _attackRange;
+    [SerializeField] private bool _playerInSightRange;
+    [SerializeField] private bool _playerInAttackRange;
     #endregion
 
+    #region Private fields
     private float _enemyMaxHealth;
-    private float _timeToEqualPosition = 3.0f;
+    [SerializeField] private float _timeToEqualPosition = 0.1f;
     private bool _equalThePosition;
+    #endregion
+
+    bool onetime = false;
 
     private void Awake()
     {
@@ -41,35 +48,45 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        //Check for sight and attack range
+        //Check for sight and attack range overlap!
         _playerInSightRange = Physics.CheckSphere(transform.position, _sightRange, _playerLayer);
         _playerInAttackRange = Physics.CheckSphere(transform.position, _attackRange, _playerLayer);
 
-        if (!_playerInSightRange && !_playerInAttackRange)
+        if (_playerInSightRange == false && _playerInAttackRange == false)
         {
-            _equalThePosition = false;
             Patroling();
+            _equalThePosition = false;
 
         }
-        if (_playerInSightRange && !_playerInAttackRange)
+        if (_playerInSightRange == true && _playerInAttackRange == false)
         {
-            _equalThePosition = true;
             ChasePlayer();
+            _equalThePosition = true;
+
+            //if (onetime == false)
+            //{
+            //    onetime = true;
+            //    _equalThePosition = true;
+
+            //}
         }
-        if (_playerInAttackRange && _playerInSightRange)
+        if (_playerInAttackRange == true && _playerInSightRange == true)
         {
             AttackPlayer();
-
         }
+
     }
 
     private void FixedUpdate()
     {
-        if (_equalThePosition)
+        if (_equalThePosition == true)
         {
+            _equalThePosition = false;
+            Debug.Log("MOVE ENEMY To PLAYER POS!");
             //Vector3.Lerp(transform.position, _player.position,_timeToEqualPosition);
-            //transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Lerp(transform.position.z, _player.transform.position.z, 5.0f));
-            transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Lerp(transform.position.z, _player.position.z, 5.0f));
+            transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Lerp(transform.position.z, _player.transform.position.z, _timeToEqualPosition* Time.deltaTime));
+            //transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Lerp(transform.position.z, _player.position.z, 5.0f));
+            //transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z * 5.0f * Time.deltaTime);
         }
     }
 
@@ -100,6 +117,7 @@ public class Enemy : MonoBehaviour
 
     private void ChasePlayer()
     {
+        _equalThePosition = true;
         _animator.SetTrigger("Walk");
         _agent.SetDestination(_player.position);
     }
