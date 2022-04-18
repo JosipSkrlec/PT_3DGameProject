@@ -16,10 +16,10 @@ TagManager:
   - 
   - 
   - Enemy
-  - 
-  - 
-  - 
-  - 
+  - Limiters
+  - Moving Scenery Objects
+  - Destroyable Objects
+  - Static Scenery Objects
   - 
   - 
   - 
