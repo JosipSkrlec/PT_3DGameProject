@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _playerSpeed = 2.5f;
     [SerializeField] private float _playerDamage = 25.0f;
     [SerializeField] private float _playerHealth = 200;
+    [SerializeField] private int _playerLifes = 3;
     [Space(5)]
     [Header("References")]
     [SerializeField] private Transform _thisTR;
@@ -114,6 +115,9 @@ public class PlayerController : MonoBehaviour
 
         enemy.TakeDamageToEnemy(_playerDamage);
 
+        // TODO - do Score system !
+        ScoreController.Instance.AppendScore((int)Random.Range(100.0f,200.0f));
+
         // TODO - show on UI!
 
 
@@ -132,7 +136,7 @@ public class PlayerController : MonoBehaviour
     {
         _playerHealth -= damage;
 
-        PlayerBarController.Instance.SetupUIEnemy(_playerMaxHealth, _playerHealth);
+        PlayerUIController.Instance.SetupUIEnemy(_playerMaxHealth, _playerHealth);
 
 
         if (_playerHealth <= 0.0f)

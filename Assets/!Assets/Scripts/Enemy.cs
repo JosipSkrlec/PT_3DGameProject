@@ -4,8 +4,9 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private float _health;
-    [SerializeField] private float _enemyDamage;
+    [SerializeField] private float _health; // 100.0f
+    [SerializeField] private float _enemySpeed; // 0.5f
+    [SerializeField] private float _enemyDamage; // 25f
     [Space(5)]
     [SerializeField] private Animator _animator;
     [SerializeField] private NavMeshAgent _agent;
@@ -18,6 +19,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Transform _attackPoint;
 
     #region Patrolling fields
+    [SerializeField] private float _timeToEqualPosition = 0.1f; // TODO - check and fix this!
     [SerializeField] private Vector3 _walkPoint;
     [SerializeField] private float _walkPointRange;
     bool walkPointSet;
@@ -38,7 +40,6 @@ public class Enemy : MonoBehaviour
 
     #region Private fields
     private float _enemyMaxHealth;
-    [SerializeField] private float _timeToEqualPosition = 0.1f;
     private bool _equalThePosition;
     #endregion
 
@@ -50,6 +51,14 @@ public class Enemy : MonoBehaviour
         _agent = GetComponent<NavMeshAgent>();
         _enemyMaxHealth = _health;
         _equalThePosition = false;
+    }
+
+    private void Start()
+    {
+        // TODO - setup the variables!!
+        _agent.speed = _enemySpeed;
+
+
     }
 
     private void Update()
@@ -88,7 +97,7 @@ public class Enemy : MonoBehaviour
         if (_equalThePosition == true)
         {
             _equalThePosition = false;
-            Debug.Log("MOVE ENEMY To PLAYER POS!");
+            //Debug.Log("MOVE ENEMY To PLAYER POS!");
             //Vector3.Lerp(transform.position, _player.position,_timeToEqualPosition);
             transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Lerp(transform.position.z, _player.transform.position.z, _timeToEqualPosition* Time.deltaTime));
             //transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Lerp(transform.position.z, _player.position.z, 5.0f));
@@ -192,7 +201,7 @@ public class Enemy : MonoBehaviour
         Debug.Log("Take damage " + damage + " to enemy!");
         _health -= damage;
 
-        EnemyBarController.Instance.SetupUIEnemy(this.transform.name, _enemyMaxHealth, _health);
+        EnemyUIController.Instance.SetupUIEnemy(this.transform.name, _enemyMaxHealth, _health);
 
         if (_health <= 0) Invoke(nameof(Die), 0.5f);
     }
