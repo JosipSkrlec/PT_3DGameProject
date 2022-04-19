@@ -3,10 +3,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] private int _playerLifes = 3;
     [SerializeField] private float _playerSpeed = 2.5f;
     [SerializeField] private float _playerDamage = 25.0f;
     [SerializeField] private float _playerHealth = 200;
-    [SerializeField] private int _playerLifes = 3;
+    [SerializeField] private float _attackRadius = 0.55f;
     [Space(5)]
     [Header("References")]
     [SerializeField] private Transform _thisTR;
@@ -14,7 +15,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private PostProcessingController _volumeController;
     [Space(5)]
-    [SerializeField] private float _attackRadius;
     [SerializeField] private LayerMask _layerMask;
     [SerializeField] private Transform _attackPoint;
 
@@ -101,6 +101,7 @@ public class PlayerController : MonoBehaviour
             if (coll != null)
             {
                 Debug.Log(coll.gameObject.name);
+                // TODO - add TakeDamage to animation as Event!
                 StartCoroutine(TakeDamageAfterDelay(0.5f, coll.GetComponent<Rigidbody>()));
                 //coll.GetComponent<Rigidbody>().AddForce(transform.forward * 150f);
             }
@@ -108,11 +109,12 @@ public class PlayerController : MonoBehaviour
         //#endregion // TODO
     }
 
+    // this delay is temporary here just to test it !
     private IEnumerator TakeDamageAfterDelay(float delay, Rigidbody enemyRB)
     {
         yield return new WaitForSeconds(delay);
 
-        Enemy enemy = enemyRB.GetComponent<Enemy>();
+        EnemyController enemy = enemyRB.GetComponent<EnemyController>();
 
         enemy.TakeDamageToEnemy(_playerDamage);
 

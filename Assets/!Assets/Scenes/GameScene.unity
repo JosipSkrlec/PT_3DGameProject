@@ -695,6 +695,7 @@ MonoBehaviour:
   _health: 60
   _enemySpeed: 0
   _enemyDamage: 15
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 16984626}
   _agent: {fileID: 16984625}
   _player: {fileID: 543450652336268399}
@@ -709,7 +710,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 1746752024}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -733,7 +734,7 @@ Transform:
   - {fileID: 1633624155}
   - {fileID: 1746752024}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &18623320
 GameObject:
@@ -5543,6 +5544,7 @@ MonoBehaviour:
   _health: 80
   _enemySpeed: 0
   _enemyDamage: 20
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 121016829}
   _agent: {fileID: 121016828}
   _player: {fileID: 543450652336268399}
@@ -5557,7 +5559,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 2098756517}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -5581,7 +5583,7 @@ Transform:
   - {fileID: 384096945}
   - {fileID: 2098756517}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &124667179
 GameObject:
@@ -8866,12 +8868,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 212629395}
   m_LocalRotation: {x: 0, y: 0.98395354, z: -0.17842482, w: 0}
-  m_LocalPosition: {x: 22, y: 3, z: 10.820001}
+  m_LocalPosition: {x: 11.939999, y: 3, z: 8.600001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1142714566}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: -89.94, z: 0}
 --- !u!1 &213215527
 GameObject:
@@ -12015,6 +12017,7 @@ MonoBehaviour:
   _health: 40
   _enemySpeed: 0.5
   _enemyDamage: 10
+  _enemyNameToDisplayOnUI: ligvuvtjctzcjvkblblblubkvkvkhvkvkhvkhvkhvkvkvkbbbnlnnln
   _animator: {fileID: 275933849}
   _agent: {fileID: 275933848}
   _player: {fileID: 543450652336268399}
@@ -12029,7 +12032,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 624343911}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -12053,7 +12056,7 @@ Transform:
   - {fileID: 1989468785}
   - {fileID: 624343911}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &276135882
 GameObject:
@@ -17395,6 +17398,7 @@ MonoBehaviour:
   _health: 375
   _enemySpeed: 0
   _enemyDamage: 40
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 409224274}
   _agent: {fileID: 409224273}
   _player: {fileID: 543450652336268399}
@@ -17409,7 +17413,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 1741099478}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -17433,7 +17437,7 @@ Transform:
   - {fileID: 980210256}
   - {fileID: 1741099478}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &409427612
 GameObject:
@@ -17959,7 +17963,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PLAYER 1
+  m_text: PLAYER
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5babfde5adcb2c4387c5543b4ef07cb, type: 2}
   m_sharedMaterial: {fileID: 2507398634456301765, guid: f5babfde5adcb2c4387c5543b4ef07cb, type: 2}
@@ -18804,6 +18808,7 @@ MonoBehaviour:
   _health: 80
   _enemySpeed: 0
   _enemyDamage: 20
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 440441774}
   _agent: {fileID: 440441773}
   _player: {fileID: 543450652336268399}
@@ -18818,7 +18823,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 1761308279}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -18842,7 +18847,7 @@ Transform:
   - {fileID: 1379344641}
   - {fileID: 1761308279}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &440537759
 GameObject:
@@ -21898,7 +21903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 525952510}
   m_Layer: 0
-  m_Name: ______________________________
+  m_Name: __________Level/Design__________
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21916,7 +21921,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &526401279
 GameObject:
@@ -24994,6 +24999,7 @@ MonoBehaviour:
   _health: 60
   _enemySpeed: 0
   _enemyDamage: 15
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 602533186}
   _agent: {fileID: 602533185}
   _player: {fileID: 543450652336268399}
@@ -25008,7 +25014,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 228699939}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -25032,7 +25038,7 @@ Transform:
   - {fileID: 895843090}
   - {fileID: 228699939}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &603976935
 GameObject:
@@ -26968,7 +26974,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &653685068
 GameObject:
@@ -27293,6 +27299,7 @@ MonoBehaviour:
   _health: 60
   _enemySpeed: 0
   _enemyDamage: 15
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 656704098}
   _agent: {fileID: 656704097}
   _player: {fileID: 543450652336268399}
@@ -27307,7 +27314,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 835003810}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -27331,7 +27338,7 @@ Transform:
   - {fileID: 322714338}
   - {fileID: 835003810}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &657801208
 GameObject:
@@ -33461,6 +33468,7 @@ MonoBehaviour:
   _health: 40
   _enemySpeed: 0
   _enemyDamage: 10
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 820669421}
   _agent: {fileID: 820669420}
   _player: {fileID: 543450652336268399}
@@ -33475,7 +33483,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 402748326}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -33499,7 +33507,7 @@ Transform:
   - {fileID: 1578514268}
   - {fileID: 402748326}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &822230494
 GameObject:
@@ -33608,6 +33616,7 @@ MonoBehaviour:
   _health: 140
   _enemySpeed: 0
   _enemyDamage: 30
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 822230496}
   _agent: {fileID: 822230495}
   _player: {fileID: 543450652336268399}
@@ -33622,7 +33631,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 1749579176}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -33646,7 +33655,7 @@ Transform:
   - {fileID: 598067194}
   - {fileID: 1749579176}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &823113572
 GameObject:
@@ -34310,6 +34319,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830229176}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &830376642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 830376643}
+  m_Layer: 0
+  m_Name: __________MISC__________
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &830376643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830376642}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.68, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &830609057
 GameObject:
   m_ObjectHideFlags: 0
@@ -36621,6 +36660,7 @@ MonoBehaviour:
   _health: 40
   _enemySpeed: 0
   _enemyDamage: 10
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 879702565}
   _agent: {fileID: 879702564}
   _player: {fileID: 543450652336268399}
@@ -36635,7 +36675,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 1177954677}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -36659,7 +36699,7 @@ Transform:
   - {fileID: 1102240720}
   - {fileID: 1177954677}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &880304194
 GameObject:
@@ -40359,6 +40399,7 @@ MonoBehaviour:
   _health: 80
   _enemySpeed: 0
   _enemyDamage: 20
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 959472233}
   _agent: {fileID: 959472232}
   _player: {fileID: 543450652336268399}
@@ -40373,7 +40414,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 1245341181}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -40397,7 +40438,7 @@ Transform:
   - {fileID: 85579259}
   - {fileID: 1245341181}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &960073391
 GameObject:
@@ -41064,6 +41105,7 @@ MonoBehaviour:
   _health: 40
   _enemySpeed: 0
   _enemyDamage: 10
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 978201075}
   _agent: {fileID: 978201074}
   _player: {fileID: 543450652336268399}
@@ -41078,7 +41120,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 292549287}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -41102,7 +41144,7 @@ Transform:
   - {fileID: 1539331919}
   - {fileID: 292549287}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &980210255
 GameObject:
@@ -42027,7 +42069,7 @@ RectTransform:
   - {fileID: 1659407917}
   - {fileID: 1573598803}
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -43757,6 +43799,36 @@ Transform:
   - {fileID: 2037611768}
   m_Father: {fileID: 1778056845}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1036789589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1036789590}
+  m_Layer: 0
+  m_Name: __________Helpers__________
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1036789590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036789589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.68, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1037483800
 GameObject:
@@ -47954,6 +48026,36 @@ Transform:
   m_Father: {fileID: 296565391}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1131325324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1131325325}
+  m_Layer: 0
+  m_Name: __________Lightning__________
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1131325325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131325324}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.68, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1132122409
 GameObject:
   m_ObjectHideFlags: 0
@@ -49962,7 +50064,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 22, y: -20}
+  m_AnchoredPosition: {x: 22, y: -24.9}
   m_SizeDelta: {x: 600, y: 88.505}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1186052761
@@ -51254,7 +51356,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1219777682
 GameObject:
@@ -51840,7 +51942,7 @@ Transform:
   - {fileID: 431685089}
   - {fileID: 2035325495}
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1225201425
 GameObject:
@@ -57926,8 +58028,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 32}
-  m_SizeDelta: {x: 800, y: 150}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 182}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &1360762182
 GameObject:
@@ -60101,6 +60203,7 @@ MonoBehaviour:
   _health: 40
   _enemySpeed: 0
   _enemyDamage: 10
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 1409615357}
   _agent: {fileID: 1409615356}
   _player: {fileID: 543450652336268399}
@@ -60115,7 +60218,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 603976936}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -60139,7 +60242,7 @@ Transform:
   - {fileID: 1151888835}
   - {fileID: 603976936}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1409643344
 GameObject:
@@ -61955,6 +62058,7 @@ MonoBehaviour:
   _health: 60
   _enemySpeed: 0
   _enemyDamage: 15
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 1455189545}
   _agent: {fileID: 1455189544}
   _player: {fileID: 543450652336268399}
@@ -61969,7 +62073,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 1886149164}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -61993,7 +62097,7 @@ Transform:
   - {fileID: 1424574633}
   - {fileID: 1886149164}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1455469184
 GameObject:
@@ -67841,6 +67945,7 @@ MonoBehaviour:
   _health: 40
   _enemySpeed: 0
   _enemyDamage: 10
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 1587633551}
   _agent: {fileID: 1587633550}
   _player: {fileID: 543450652336268399}
@@ -67855,7 +67960,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 1524898535}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -67879,7 +67984,7 @@ Transform:
   - {fileID: 1775010725}
   - {fileID: 1524898535}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1587747023
 GameObject:
@@ -72287,11 +72392,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687258581}
   m_LocalRotation: {x: 0, y: 0.98395354, z: -0.17842482, w: 0}
-  m_LocalPosition: {x: 22, y: 3.27, z: 8.28}
+  m_LocalPosition: {x: 11.939999, y: 3.27, z: 6.0599995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 --- !u!114 &1687258586
 MonoBehaviour:
@@ -72570,6 +72675,7 @@ MonoBehaviour:
   _health: 60
   _enemySpeed: 0
   _enemyDamage: 15
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 1692069879}
   _agent: {fileID: 1692069878}
   _player: {fileID: 543450652336268399}
@@ -72584,7 +72690,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 1813979608}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -72608,7 +72714,7 @@ Transform:
   - {fileID: 1844487486}
   - {fileID: 1813979608}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1693682203
 GameObject:
@@ -72748,6 +72854,7 @@ MonoBehaviour:
   _health: 80
   _enemySpeed: 0
   _enemyDamage: 20
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 1695305646}
   _agent: {fileID: 1695305645}
   _player: {fileID: 543450652336268399}
@@ -72762,7 +72869,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 1146324979}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -72786,7 +72893,7 @@ Transform:
   - {fileID: 1604064843}
   - {fileID: 1146324979}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1695950981
 GameObject:
@@ -75122,12 +75229,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746689284}
   m_LocalRotation: {x: 0, y: 0.98395354, z: -0.17842482, w: 0}
-  m_LocalPosition: {x: 22, y: 3.27, z: 8.28}
+  m_LocalPosition: {x: 11.939999, y: 3.27, z: 6.0599995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 241527719}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -89.94, z: 0}
 --- !u!1 &1746752023
 GameObject:
@@ -77860,7 +77967,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1809505614}
   m_Layer: 0
-  m_Name: ______________________________
+  m_Name: __________Cameras__________
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77878,7 +77985,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1809627720
 GameObject:
@@ -78321,7 +78428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 22, y: -87}
+  m_AnchoredPosition: {x: 22, y: -112}
   m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1820803284
@@ -79719,7 +79826,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1854120230}
   m_Layer: 0
-  m_Name: ______________________________
+  m_Name: __________Player/Enemy__________
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79737,7 +79844,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1854346373
 GameObject:
@@ -81402,6 +81509,7 @@ MonoBehaviour:
   _health: 40
   _enemySpeed: 0
   _enemyDamage: 10
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 1894295402}
   _agent: {fileID: 1894295401}
   _player: {fileID: 543450652336268399}
@@ -81416,7 +81524,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 2108784133}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -81440,7 +81548,7 @@ Transform:
   - {fileID: 814729730}
   - {fileID: 2108784133}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1898200119
 GameObject:
@@ -83902,7 +84010,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1956112728
 MonoBehaviour:
@@ -83932,7 +84040,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: e0238387107c70c4b879805d6bd99e85, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: b9cc30111045af84cb3d8eae164ae2a8, type: 2}
 --- !u!1 &1957736779
 GameObject:
   m_ObjectHideFlags: 0
@@ -86589,6 +86697,7 @@ MonoBehaviour:
   _health: 40
   _enemySpeed: 0
   _enemyDamage: 10
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 2019824997}
   _agent: {fileID: 2019824996}
   _player: {fileID: 543450652336268399}
@@ -86603,7 +86712,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 501560920}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -86627,7 +86736,7 @@ Transform:
   - {fileID: 669897068}
   - {fileID: 501560920}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2020050584
 GameObject:
@@ -86832,6 +86941,7 @@ MonoBehaviour:
   _health: 140
   _enemySpeed: 0
   _enemyDamage: 30
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 2020568329}
   _agent: {fileID: 2020568328}
   _player: {fileID: 543450652336268399}
@@ -86846,7 +86956,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 1285742252}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -86870,7 +86980,7 @@ Transform:
   - {fileID: 713056803}
   - {fileID: 1285742252}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2021673402
 GameObject:
@@ -87450,6 +87560,7 @@ MonoBehaviour:
   _health: 40
   _enemySpeed: 0
   _enemyDamage: 10
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 2031423408}
   _agent: {fileID: 2031423407}
   _player: {fileID: 543450652336268399}
@@ -87464,7 +87575,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 763360778}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -87488,7 +87599,7 @@ Transform:
   - {fileID: 180038129}
   - {fileID: 763360778}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2031697576
 GameObject:
@@ -91980,7 +92091,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 45, y: 130, z: 90}
 --- !u!1 &2139414315
 GameObject:
@@ -92120,6 +92231,7 @@ MonoBehaviour:
   _health: 140
   _enemySpeed: 0
   _enemyDamage: 30
+  _enemyNameToDisplayOnUI: 
   _animator: {fileID: 2140496625}
   _agent: {fileID: 2140496624}
   _player: {fileID: 543450652336268399}
@@ -92134,7 +92246,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 1673849707}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
@@ -92158,7 +92270,7 @@ Transform:
   - {fileID: 627530755}
   - {fileID: 1673849707}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2142808888
 GameObject:
@@ -92694,14 +92806,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132148412546773}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 22, y: 0, z: 2.82}
+  m_LocalPosition: {x: 11.94, y: 0, z: 0.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2165227074796210824}
   - {fileID: 5465940245738112251}
   - {fileID: 1143680036}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!4 &543450652343298261
 Transform:
@@ -92718,7 +92830,7 @@ Transform:
   - {fileID: 5472622939593676107}
   - {fileID: 1971060590}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &602609422522519984
 GameObject:
@@ -92845,6 +92957,7 @@ MonoBehaviour:
   _health: 40
   _enemySpeed: 0.2
   _enemyDamage: 10
+  _enemyNameToDisplayOnUI: Enemy Name 01
   _animator: {fileID: 919132148404859507}
   _agent: {fileID: 919132148404859508}
   _player: {fileID: 543450652336268399}
@@ -92859,7 +92972,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _attackPoint: {fileID: 1971060590}
-  _timeToEqualPosition: 0.1
+  _timeToEqualPosition: 0.75
   _walkPoint: {x: 0, y: 0, z: 0}
   _walkPointRange: 1
   _timeBetweenAttacks: 2
