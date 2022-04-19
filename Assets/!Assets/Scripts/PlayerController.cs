@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform _thisTR;
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private Animator _animator;
-    [SerializeField] private VolumeController _volumeController;
+    [SerializeField] private PostProcessingController _volumeController;
     [Space(5)]
     [SerializeField] private float _attackRadius;
     [SerializeField] private LayerMask _layerMask;
@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         _playerMaxHealth = _playerHealth;
+        PlayerUIController.Instance.UpdateLife(_playerLifes);
     }
 
     // Update is called once per frame
@@ -57,7 +58,7 @@ public class PlayerController : MonoBehaviour
             //_animator.SetTrigger("Walking");
             //_rigidbody.AddForce();            
             //_rigidbody.velocity = new Vector3(0.0f, 0.0f, -(mV * _playerSpeed));
-           // transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + _playerSpeed * Time.deltaTime);
+            // transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + _playerSpeed * Time.deltaTime);
             transform.position += new Vector3(0.0f, 0.0f, -(_playerSpeed / 2 * Time.deltaTime));
         }
         else if (Input.GetKey(KeyCode.S))
@@ -66,7 +67,7 @@ public class PlayerController : MonoBehaviour
             //_animator.SetTrigger("Walking");
             //_rigidbody.AddForce();            
             //_rigidbody.velocity = new Vector3(0.0f, 0.0f, -(mV * _playerSpeed));
-            transform.position += new Vector3(0.0f, 0.0f, _playerSpeed/2 * Time.deltaTime);
+            transform.position += new Vector3(0.0f, 0.0f, _playerSpeed / 2 * Time.deltaTime);
 
         }
 
@@ -116,7 +117,7 @@ public class PlayerController : MonoBehaviour
         enemy.TakeDamageToEnemy(_playerDamage);
 
         // TODO - do Score system !
-        ScoreController.Instance.AppendScore((int)Random.Range(100.0f,200.0f));
+        ScoreController.Instance.AppendScore((int)Random.Range(100.0f, 200.0f));
 
         // TODO - show on UI!
 
@@ -136,12 +137,26 @@ public class PlayerController : MonoBehaviour
     {
         _playerHealth -= damage;
 
-        PlayerUIController.Instance.SetupUIEnemy(_playerMaxHealth, _playerHealth);
+        PlayerUIController.Instance.SetupUIPlayer(_playerMaxHealth, _playerHealth);
 
 
         if (_playerHealth <= 0.0f)
         {
-            Debug.Log("Player is death!");
+            _playerLifes -= 1;
+
+            if (_playerLifes <= 0)
+            {
+                Debug.Log("Player if death!");
+
+            }
+            else
+            {
+                Debug.Log("Take life to plyer!");
+                PlayerUIController.Instance.UpdateLife(_playerLifes);
+                _playerHealth = _playerMaxHealth;
+
+            }
+
         }
         else if (_playerHealth <= 50.0f)
         {

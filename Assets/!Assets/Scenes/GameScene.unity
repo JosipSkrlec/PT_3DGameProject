@@ -42075,6 +42075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerBarIndicator: {fileID: 1303601298}
+  _playerLifeText: {fileID: 774360256}
 --- !u!114 &995436659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65934,6 +65935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerBarIndicator: {fileID: 0}
+  _playerLifeText: {fileID: 0}
 --- !u!1 &1547667516
 GameObject:
   m_ObjectHideFlags: 0
@@ -72285,7 +72287,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687258581}
   m_LocalRotation: {x: 0, y: 0.98395354, z: -0.17842482, w: 0}
-  m_LocalPosition: {x: 22, y: 3, z: 10.820001}
+  m_LocalPosition: {x: 22, y: 3.27, z: 8.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -92991,6 +92993,7 @@ MonoBehaviour:
   _playerSpeed: 3
   _playerDamage: 10
   _playerHealth: 200
+  _playerLifes: 3
   _thisTR: {fileID: 543450652336268399}
   _rigidbody: {fileID: 919132148412546775}
   _animator: {fileID: 919132148412546776}

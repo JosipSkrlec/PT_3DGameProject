@@ -59,7 +59,7 @@
     <Compile Include="Assets\!Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\!Assets\Scripts\TESTS\SpawnManagerScriptableObject.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
-    <Compile Include="Assets\!Assets\Scripts\VolumeController.cs" />
+    <Compile Include="Assets\!Assets\Scripts\PostProcessingController.cs" />
     <Compile Include="Assets\Scripts\TESTING_PLASTIC_SCM.cs" />
     <Compile Include="Assets\!Assets\Scripts\PlayerUIController.cs" />
     <Compile Include="Assets\!Assets\Scripts\EnemyUIController.cs" />
