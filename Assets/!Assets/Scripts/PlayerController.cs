@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _playerDamage = 25.0f;
     [SerializeField] private float _playerHealth = 200;
     [SerializeField] private float _attackRadius = 0.55f;
+    [SerializeField] private float _jumpForce = 4.0f;
     [Space(5)]
     [Header("References")]
     [SerializeField] private Transform _thisTR;
@@ -72,10 +73,20 @@ public class PlayerController : MonoBehaviour
         }
 
         // TODO - disable multi attack in the same time !.. do cooldown!
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             Attack();
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            // Todo - remove double jump,fix !!
+            Debug.Log("JUMP!");
+            
+            _rigidbody.velocity = new Vector3(0.0f, _jumpForce, 0.0f);
+
+        }
+
     }
 
     private void Attack()
