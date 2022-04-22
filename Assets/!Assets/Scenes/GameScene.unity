@@ -93035,7 +93035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 40
   _enemySpeed: 0.2
-  _enemyDamage: 10
+  _enemyDamage: 40
   _enemyNameToDisplayOnUI: Enemy Name 01
   _animator: {fileID: 919132148404859507}
   _agent: {fileID: 919132148404859508}
