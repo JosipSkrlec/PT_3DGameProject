@@ -1,2 +1,0 @@
-C:\Users\JOZA\Desktop\PT_3DGameProject\obj\Debug\NavMeshComponentsEditor.csproj.AssemblyReference.cache
-C:\Users\JOZA\Desktop\PT_3DGameProject\obj\Debug\NavMeshComponentsEditor.csproj.CoreCompileInputs.cache

@@ -15,11 +15,11 @@ C:/Users/JOZA/Desktop/PT_3DGameProject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59625
+56763
 Successfully changed project path to: C:/Users/JOZA/Desktop/PT_3DGameProject
 C:/Users/JOZA/Desktop/PT_3DGameProject
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 370.60 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 149.60 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
@@ -35,353 +35,42 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56428
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56944
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007353 seconds.
+Registered in 0.003049 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 477.64 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 141.29 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.397 seconds
+- Completed reload, in  1.882 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2397ms)
-		BeginReloadAssembly (381ms)
+	ReloadAssembly (1883ms)
+		BeginReloadAssembly (285ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (3ms)
-		EndReloadAssembly (1733ms)
-			LoadAssemblies (374ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1191ms)
+			LoadAssemblies (281ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (473ms)
+			SetupTypeCache (531ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (121ms)
-			SetupLoadedEditorAssemblies (878ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (374ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (478ms)
-				BeforeProcessingInitializeOnLoad (42ms)
-				ProcessInitializeOnLoadAttributes (257ms)
-				ProcessInitializeOnLoadMethodAttributes (88ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (141ms)
+				BeforeProcessingInitializeOnLoad (24ms)
+				ProcessInitializeOnLoadAttributes (150ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (1ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.025114 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 259.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  4.239 seconds
-Domain Reload Profiling:
-	ReloadAssembly (4241ms)
-		BeginReloadAssembly (419ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (15ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (47ms)
-		EndReloadAssembly (3646ms)
-			LoadAssemblies (328ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1093ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (340ms)
-			SetupLoadedEditorAssemblies (1560ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (260ms)
-				BeforeProcessingInitializeOnLoad (266ms)
-				ProcessInitializeOnLoadAttributes (771ms)
-				ProcessInitializeOnLoadMethodAttributes (244ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-D3D shader create error for vertex shader [0x80070057]
-D3D shader create error for pixel shader [0x80070057]
-D3D shader create error for vertex shader [0x80070057]
-D3D shader create error for vertex shader [0x80070057]
-D3D shader create error for vertex shader [0x80070057]
-D3D shader create error for domain shader [0x80070057]
-D3D shader create error for domain shader [0x80070057]
-Refreshing native plugins compatible for Editor in 1.04 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4381 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 214.6 MB.
-System memory in use after: 214.9 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4826.
-Total: 5.070200 ms (FindLiveObjects: 0.374300 ms CreateObjectMapping: 0.277700 ms MarkObjects: 4.308500 ms  DeleteObjects: 0.108400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/!Assets/Healing_Item/ImpactExplosion01.vfx
-  artifactKey: Guid(de77be96aead473439f55aa8e97a9eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/ImpactExplosion01.vfx using Guid(de77be96aead473439f55aa8e97a9eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8961c35375918073761d5b4e8fa9cc3a') in 0.197162 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.927407 seconds.
-  path: Assets/!Assets/Healing_Item/ImpactExplosion01.vfx
-  artifactKey: Guid(de77be96aead473439f55aa8e97a9eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/ImpactExplosion01.vfx using Guid(de77be96aead473439f55aa8e97a9eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e507ac923bb0e4d11c3d06bed78b289') in 0.025017 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 25.584715 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01
-  artifactKey: Guid(7f41918c4b611c64083a1d99bdfc84e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01 using Guid(7f41918c4b611c64083a1d99bdfc84e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ef41eacfdce3e192ae0491961c72f30') in 0.037345 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.009230 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx
-  artifactKey: Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx using Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4007b158d370cb77c9748e4297e5861f') in 0.247500 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.929659 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/firstPart
-  artifactKey: Guid(708f57d4815c1b246b542123bcf19996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/firstPart using Guid(708f57d4815c1b246b542123bcf19996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e2deda45f3fc7d94e2e1117715992e0') in 0.083473 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.093194 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/firstPart/HalingEffect01.png
-  artifactKey: Guid(2ee354b3bb73fba489505ab81b6b9104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/firstPart/HalingEffect01.png using Guid(2ee354b3bb73fba489505ab81b6b9104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b0213aedcf600834df4c0df41ed5ea0') in 0.642074 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000425 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/firstPart/HealingEffect01MAt.mat
-  artifactKey: Guid(902a9d98dffc8724c8578afd87bdff52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/firstPart/HealingEffect01MAt.mat using Guid(902a9d98dffc8724c8578afd87bdff52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a611b213533280bfac5367c65a8eff6') in 34.970039 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000422 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/firstPart/HealingEffect01.fbx
-  artifactKey: Guid(008479f599fc603468788737535f700c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/firstPart/HealingEffect01.fbx using Guid(008479f599fc603468788737535f700c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afcd2bbf25ce22af0a262435a6b6667f') in 2.029558 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000375 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/firstPart/HealingTextureLayout.png
-  artifactKey: Guid(a1206a67ce6b05140a512d9ef6d845ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/firstPart/HealingTextureLayout.png using Guid(a1206a67ce6b05140a512d9ef6d845ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5edc35dd73f1dca5e4bd0e17ea16ea7f') in 0.048586 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 56.730279 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx
-  artifactKey: Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx using Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '250b61191d2c15d95170a5edd5f88889') in 0.033693 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 47.271156 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx
-  artifactKey: Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx using Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98599c2caeb09e3f65efeea290c75944') in 0.035032 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 59.499141 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx
-  artifactKey: Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx using Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e84222c56bf3f29a92b7cc509e2f9128') in 0.018367 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 28.400102 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx
-  artifactKey: Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx using Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '841c038ff7065d382593ef6656b5f069') in 0.029675 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.429662 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx
-  artifactKey: Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx using Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '670a422d2157e1b291d1f5c4b538ab3e') in 0.026833 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.115609 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx
-  artifactKey: Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx using Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '646f75afed1425d6f2bc8aa51709b2cd') in 0.006660 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.671546 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx
-  artifactKey: Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx using Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09fe42a985050cc600a854c41afb5f97') in 0.036299 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.206449 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx
-  artifactKey: Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx using Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '307016d34a2ea7893aa270e6d516e49a') in 0.023563 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.086833 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx
-  artifactKey: Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx using Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05f9baba1395beb951c975efa59631e2') in 0.014517 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.129307 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx
-  artifactKey: Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx using Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ee5dfda247e44be1a22f54b9ff562c7') in 0.013127 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 103.732237 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/MainScene_VolumeProfile.asset
-  artifactKey: Guid(b03059e2f93c1894fb3d7075690e05ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/MainScene_VolumeProfile.asset using Guid(b03059e2f93c1894fb3d7075690e05ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1353c3f66415ddab33daf8b0b74f7478') in 0.076341 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 142.254337 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/MainScene_VolumeProfile.asset
-  artifactKey: Guid(b03059e2f93c1894fb3d7075690e05ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/MainScene_VolumeProfile.asset using Guid(b03059e2f93c1894fb3d7075690e05ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca900900d8641fc14ced51cc652db7a2') in 0.009458 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011167 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.80 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.764 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3764ms)
-		BeginReloadAssembly (387ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (76ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (78ms)
-		EndReloadAssembly (3276ms)
-			LoadAssemblies (429ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (731ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (263ms)
-			SetupLoadedEditorAssemblies (1146ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (481ms)
-				ProcessInitializeOnLoadAttributes (617ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (30ms)
-Platform modules already initialized, skipping
-D3D shader create error for vertex shader [0x80070057]
-D3D shader create error for pixel shader [0x80070057]
-D3D shader create error for vertex shader [0x80070057]
-D3D shader create error for vertex shader [0x80070057]
-D3D shader create error for vertex shader [0x80070057]
-D3D shader create error for domain shader [0x80070057]
-D3D shader create error for domain shader [0x80070057]
-Refreshing native plugins compatible for Editor in 1.79 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4056 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 212.2 MB.
-System memory in use after: 212.5 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 5037.
-Total: 9.700200 ms (FindLiveObjects: 0.811800 ms CreateObjectMapping: 0.617800 ms MarkObjects: 8.213000 ms  DeleteObjects: 0.055500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 14.943785 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx
-  artifactKey: Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/HealingEffect01.vfx using Guid(4756ead204b42774198c0fcea0e7990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44d7a684f9212d754da3cef8db2e7cde') in 0.083236 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 60.977467 seconds.
-  path: Assets/!Assets/Healing_Item/ImpactExplosion01.vfx
-  artifactKey: Guid(de77be96aead473439f55aa8e97a9eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/ImpactExplosion01.vfx using Guid(de77be96aead473439f55aa8e97a9eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82043638d075ec2071b97004560090a3') in 0.009088 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 352.497521 seconds.
-  path: Assets/!Assets/Healing_Item/Healing01/MainScene_VolumeProfile.asset
-  artifactKey: Guid(b03059e2f93c1894fb3d7075690e05ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Healing_Item/Healing01/MainScene_VolumeProfile.asset using Guid(b03059e2f93c1894fb3d7075690e05ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26eaf0f8795d5ee97e840515a73161b2') in 0.010245 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 191.689446 seconds.
-  path: Assets/Settings/ForwardRenderer.asset
-  artifactKey: Guid(4a8e21d5c33334b11b34a596161b9360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/ForwardRenderer.asset using Guid(4a8e21d5c33334b11b34a596161b9360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b5b4baeacd5daf8838109424dd157b8') in 0.167321 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000482 seconds.
-  path: Assets/Settings/SampleSceneProfile.asset
-  artifactKey: Guid(10fc4df2da32a41aaa32d77bc913491c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/SampleSceneProfile.asset using Guid(10fc4df2da32a41aaa32d77bc913491c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16d7dda6c1ce216b1e56f2f168157c75') in 0.046679 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000903 seconds.
-  path: Assets/Settings/UniversalRP-LowQuality.asset
-  artifactKey: Guid(a31e9f9f9c9d4b9429ed0d1234e22103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/UniversalRP-LowQuality.asset using Guid(a31e9f9f9c9d4b9429ed0d1234e22103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9466a7e3600878cd1328f0adb22aefbd') in 0.127160 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000419 seconds.
-  path: Assets/Settings/UniversalRP-MediumQuality.asset
-  artifactKey: Guid(d847b876476d3d6468f5dfcd34266f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/UniversalRP-MediumQuality.asset using Guid(d847b876476d3d6468f5dfcd34266f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '910b698177ba2e4a5200e7e31e44daca') in 0.206134 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000622 seconds.
-  path: Assets/Settings/UniversalRP-HighQuality.asset
-  artifactKey: Guid(19ba41d7c0026c3459d37c2fe90c55a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/UniversalRP-HighQuality.asset using Guid(19ba41d7c0026c3459d37c2fe90c55a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae161b6c7546d4290eb2e845fa117fc0') in 0.095622 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 61.621170 seconds.
-  path: Assets/!Assets/Scenes/GameScene/NavMesh-EnemyNavMesh.asset
-  artifactKey: Guid(b9cc30111045af84cb3d8eae164ae2a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Scenes/GameScene/NavMesh-EnemyNavMesh.asset using Guid(b9cc30111045af84cb3d8eae164ae2a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '180a8f4be46c67036c6dd31813a35494') in 0.049062 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.966967 seconds.
-  path: Assets/!Assets/Textures/Health_Test.png
-  artifactKey: Guid(1d75f32fb35998d44ad1f34a1494d2ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/!Assets/Textures/Health_Test.png using Guid(1d75f32fb35998d44ad1f34a1494d2ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3042498d8781f1cd5b6ae1f1b6978465') in 0.368560 seconds 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+Registered in 0.006604 seconds.
