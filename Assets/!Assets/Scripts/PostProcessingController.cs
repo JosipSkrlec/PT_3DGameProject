@@ -9,20 +9,20 @@ public class PostProcessingController : MonoBehaviour
 {
     [SerializeField] private Volume _volume;
 
-    private Vignette _vignette;
+    //private Vignette _vignette;
 
-    private Sequence _vignetteSequenceAnimation;
+    private Sequence _volumeWeightSequenceAnimation;
 
     private void Start()
     {
         VolumeProfile volumeProfile = _volume.profile;
 
-        if (!volumeProfile.TryGet(out _vignette)) {
-            throw new System.NullReferenceException(nameof(_vignette));
-        }
+        //if (!volumeProfile.TryGet(out _vignette)) {
+        //    throw new System.NullReferenceException(nameof(_vignette));
+        //}
 
         // TODO - do good animation of vignette!
-        _vignetteSequenceAnimation = DOTween.Sequence()
+        _volumeWeightSequenceAnimation = DOTween.Sequence()
           .Append(DOTween.To(() => _volume.weight, x => _volume.weight = x, 0.75f, 0.25f))
           .AppendInterval(1.0f)
           .Append(DOTween.To(() => _volume.weight, x => _volume.weight = x, 0f, 0.25f))
@@ -36,11 +36,11 @@ public class PostProcessingController : MonoBehaviour
 
     public void AnimateLowHealthIndicator()
     {
-        if (_vignette != null)
-        {
+        //if (_vignette != null)
+        //{
             //_vignette.intensity.Interp(0.0f, 0.5f, 0.25f)
-            _vignetteSequenceAnimation.Play();
-        }
+            _volumeWeightSequenceAnimation.Play();
+        //}
     }
 
     //private IEnumerator AnimateRecursion()

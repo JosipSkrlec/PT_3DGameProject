@@ -196,7 +196,7 @@ public class EnemyController : MonoBehaviour
             {
                 if (coll != null)
                 {
-                    Debug.Log(coll.gameObject.name);
+                    //Debug.Log(coll.gameObject.name);
                     StartCoroutine(TakeDamageAfterDelay(0.5f, coll.GetComponent<Rigidbody>()));
                     //coll.GetComponent<Rigidbody>().AddForce(transform.forward * 150f);
                 }

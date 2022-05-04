@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     //[SerializeField] private Transform _interactiveBoxToSpawn;
+    [SerializeField] private bool _spawnAtStart = false;
     [SerializeField] private bool _spawnOnce = true;
     [Space(5)]
     [SerializeField] private float _gizmosRadius;
@@ -17,6 +18,14 @@ public class EnemySpawner : MonoBehaviour
 
     //}
 
+    private void Start()
+    {
+        if (_spawnAtStart == true)
+        {
+            _spawned = true;
+            SpawnObjects();
+        }
+    }
     private void OnTriggerEnter(Collider collision)
     {
         if (_spawned == true)
@@ -27,14 +36,18 @@ public class EnemySpawner : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             _spawned = true;
-            Debug.Log("Player In -> Spawn objects!");
-            foreach (ObjectToSpawnDefinition objectInfo in _objectsToSpawn)
-            {
-                Instantiate(objectInfo._objectToSpawn, objectInfo._objectSpawnPosition, Quaternion.identity);
-            }
+            SpawnObjects();
         }
     }
 
+    private void SpawnObjects()
+    {
+        Debug.Log("Player In -> Spawn objects!");
+        foreach (ObjectToSpawnDefinition objectInfo in _objectsToSpawn)
+        {
+            Instantiate(objectInfo._objectToSpawn, objectInfo._objectSpawnPosition, Quaternion.identity);
+        }
+    }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
