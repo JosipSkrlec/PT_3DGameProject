@@ -35,7 +35,10 @@ public class EnemySpawner : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
-            _spawned = true;
+            if (_spawnOnce == true)
+            {
+                _spawned = true;
+            }
             SpawnObjects();
         }
     }
@@ -54,7 +57,7 @@ public class EnemySpawner : MonoBehaviour
 
         foreach (ObjectToSpawnDefinition objectInfo in _objectsToSpawn)
         {
-            Gizmos.DrawSphere(objectInfo._objectSpawnPosition,_gizmosRadius);
+            Gizmos.DrawSphere(objectInfo._objectSpawnPosition, _gizmosRadius);
         }
     }
 

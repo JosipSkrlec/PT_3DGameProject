@@ -150,7 +150,7 @@ public class PlayerController : MonoBehaviour
     {
         _playerHealth -= damage;
 
-        PlayerUIController.Instance.SetupUIPlayer(_playerMaxHealth, _playerHealth);
+        PlayerUIController.Instance.UpdateHealth(_playerMaxHealth, _playerHealth);
 
 
         if (_playerHealth <= 0.0f)
@@ -175,6 +175,19 @@ public class PlayerController : MonoBehaviour
         {
             _volumeController.AnimateLowHealthIndicator();
         }
+    }
+
+    public void HealThePlayer(float healAmount)
+    {
+        _playerHealth += healAmount;
+
+        if (_playerHealth > _playerMaxHealth)
+        {
+            _playerHealth = _playerMaxHealth;
+        }
+
+
+        PlayerUIController.Instance.UpdateHealth(_playerMaxHealth, _playerHealth);
     }
 
 

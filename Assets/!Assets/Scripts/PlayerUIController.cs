@@ -22,7 +22,7 @@ public class PlayerUIController : MonoBehaviour
     }
 
 
-    public void SetupUIPlayer(float playerMaxHealth, float playerCurrentHealth)
+    public void UpdateHealth(float playerMaxHealth, float playerCurrentHealth)
     {
         _playerBarIndicator.fillAmount = playerCurrentHealth / playerMaxHealth;
 
