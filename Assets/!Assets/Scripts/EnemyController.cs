@@ -258,6 +258,14 @@ public class EnemyController : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public void SetupSettings(string enemyName, EnemyDifficulty enemySettings)
+    {
+        EnemySettings settings = EnemySettingsManager.Instance.GetEnemySettings(enemySettings);
+        _enemyNameToDisplayOnUI = enemyName;
+        Debug.Log(enemyName + " " + settings._health + " " + settings._enemySpeed + " " + settings._enemyDamage);
+
+    }
+
     private void OnDrawGizmosSelected()
     {
         if (_attackPoint == null)

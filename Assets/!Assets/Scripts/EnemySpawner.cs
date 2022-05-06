@@ -48,7 +48,8 @@ public class EnemySpawner : MonoBehaviour
         Debug.Log("Player In -> Spawn objects!");
         foreach (ObjectToSpawnDefinition objectInfo in _objectsToSpawn)
         {
-            Instantiate(objectInfo._objectToSpawn, objectInfo._objectSpawnPosition, Quaternion.identity);
+            GameObject go =  Instantiate(objectInfo._objectToSpawn, objectInfo._objectSpawnPosition, Quaternion.identity);
+            go.GetComponent<EnemyController>().SetupSettings(objectInfo._enemyName, objectInfo._enemyDifficulty);
         }
     }
     private void OnDrawGizmosSelected()
@@ -67,5 +68,7 @@ public class EnemySpawner : MonoBehaviour
 public class ObjectToSpawnDefinition
 {
     public GameObject _objectToSpawn;
+    public string _enemyName;
+    [Tooltip("Configured in EnemySettingsManager -> scene GameObject")]public EnemyDifficulty _enemyDifficulty;
     public Vector3 _objectSpawnPosition;
 }

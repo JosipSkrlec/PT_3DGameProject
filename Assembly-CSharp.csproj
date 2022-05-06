@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\!Assets\Scripts\Healing.cs" />
     <Compile Include="Assets\!Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\!Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\!Assets\Scripts\CameraController.cs" />
@@ -70,7 +71,7 @@
     <Compile Include="Assets\!Assets\Scripts\UIMenuController.cs" />
     <Compile Include="Assets\!Assets\Scripts\EnemyUIController.cs" />
     <Compile Include="Assets\!Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\!Assets\Scripts\Healing.cs" />
+    <Compile Include="Assets\!Assets\Scripts\EnemySettingsManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
