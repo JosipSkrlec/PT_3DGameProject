@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
             // Todo - remove double jump,fix !!
             Debug.Log("JUMP!");
             
-            _rigidbody.velocity = new Vector3(0.0f, _jumpForce, 0.0f);
+            //_rigidbody.velocity = new Vector3(0.0f, _jumpForce, 0.0f);
 
         }
 
